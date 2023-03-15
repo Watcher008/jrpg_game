@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float walkSpeed;
 
     public EmeraldState State { get; private set; } = EmeraldState.Movement;
-    public Vector3 Velocity => _characterController.velocity;
+    public Vector2 Velocity => _characterController.velocity;
     public Vector2 CurrentInput { get; private set; }
     public FacingDirections FacingDirection { get; private set; } = FacingDirections.South;
 
@@ -35,7 +35,7 @@ public class PlayerController : MonoBehaviour
         }
 
         //Apply velocity to character controller.
-        var movement = new Vector3(CurrentInput.x, 0f, -CurrentInput.y);
+        var movement = CurrentInput;
         float diagonalSpeedModifier = Mathf.Sqrt(0.5f); // To limit diagonal movement speed
         float currentSpeed = walkSpeed;
 
