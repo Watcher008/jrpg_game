@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02f1da0b6abdb7d45aa4315eccab639b, type: 3}
+  m_Name: emerald_run_east
+  m_EditorClassIdentifier: 
+  cels:
+  - sprite: {fileID: -367411170, guid: 4238ad44a1ccf544eb830377daf263bc, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: -1393618550, guid: 4238ad44a1ccf544eb830377daf263bc, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: -2061515063, guid: 4238ad44a1ccf544eb830377daf263bc, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: -1363367186, guid: 4238ad44a1ccf544eb830377daf263bc, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: -2085689853, guid: 4238ad44a1ccf544eb830377daf263bc, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: -723021898, guid: 4238ad44a1ccf544eb830377daf263bc, type: 3}
+    drivers:
+      keys: []
+      values: 
+  controlDriver:
+    name: 
+    autoIncrement: 1
+    percentageBased: 0
+    guid: 2b461b62-55f5-45e8-a942-2e4f51293efd
+  drivers:
+    keys: []
+    values: 

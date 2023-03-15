@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02f1da0b6abdb7d45aa4315eccab639b, type: 3}
+  m_Name: emerald_walk_south
+  m_EditorClassIdentifier: 
+  cels:
+  - sprite: {fileID: 1355968440, guid: 0d77213fa4bfaa942b40a63fd696617b, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 714908786, guid: 0d77213fa4bfaa942b40a63fd696617b, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: -1275216007, guid: 0d77213fa4bfaa942b40a63fd696617b, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 1477777027, guid: 0d77213fa4bfaa942b40a63fd696617b, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: -628709800, guid: 0d77213fa4bfaa942b40a63fd696617b, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 2045900608, guid: 0d77213fa4bfaa942b40a63fd696617b, type: 3}
+    drivers:
+      keys: []
+      values: 
+  controlDriver:
+    name: 
+    autoIncrement: 1
+    percentageBased: 0
+    guid: 8326f0fc-1141-406a-b4d6-f1bb8a73bd0e
+  drivers:
+    keys: []
+    values: 

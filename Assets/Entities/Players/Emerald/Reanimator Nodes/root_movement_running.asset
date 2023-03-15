@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1b935bc3bfd4944ab93c4a574dfd0da, type: 3}
+  m_Name: root_movement_running
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 11400000, guid: 8f6a3b429557a944cb73839df6f9f54e, type: 2}
+  - {fileID: 11400000, guid: 6854c773ed53166418dd3814d7b80b7b, type: 2}
+  - {fileID: 11400000, guid: cc1fc03c64ae8094b9ea3109e0b1f9e7, type: 2}
+  - {fileID: 11400000, guid: 6a0e28d650f27a84b86d011b31d0bde9, type: 2}
+  controlDriver:
+    name: direction
+    autoIncrement: 0
+    percentageBased: 0
+    guid: e1e22118-1c89-45b6-88ca-ec2f4f51943d
+  drivers:
+    keys: []
+    values: 

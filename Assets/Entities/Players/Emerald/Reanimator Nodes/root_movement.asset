@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1b935bc3bfd4944ab93c4a574dfd0da, type: 3}
+  m_Name: root_movement
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 11400000, guid: 072b4af3b9de90141bdbe3bc54fd6e41, type: 2}
+  - {fileID: 11400000, guid: 8f5c539ff6471b147a9351d9468b2346, type: 2}
+  controlDriver:
+    name: isRunning
+    autoIncrement: 0
+    percentageBased: 0
+    guid: baba6b96-c265-485c-ad49-9783eca55be4
+  drivers:
+    keys: []
+    values: 

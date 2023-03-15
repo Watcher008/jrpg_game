@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1b935bc3bfd4944ab93c4a574dfd0da, type: 3}
+  m_Name: root_movement_walking
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 11400000, guid: c8d42278c81b8f547848a857a8a3b58a, type: 2}
+  - {fileID: 11400000, guid: d41f77171bf77884c853ef6ff7a2b78a, type: 2}
+  - {fileID: 11400000, guid: 823fb38192fef3d48ab226f419c908f9, type: 2}
+  - {fileID: 11400000, guid: 02413065923fd13419ffa0cdbe24707e, type: 2}
+  controlDriver:
+    name: direction
+    autoIncrement: 0
+    percentageBased: 0
+    guid: e1e22118-1c89-45b6-88ca-ec2f4f51943d
+  drivers:
+    keys: []
+    values: 

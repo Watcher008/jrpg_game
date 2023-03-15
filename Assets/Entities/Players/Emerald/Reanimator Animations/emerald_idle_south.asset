@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02f1da0b6abdb7d45aa4315eccab639b, type: 3}
+  m_Name: emerald_idle_south
+  m_EditorClassIdentifier: 
+  cels:
+  - sprite: {fileID: -434685186, guid: 3a6f031d60051504c9473540b2f42e5c, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 161253499, guid: 3a6f031d60051504c9473540b2f42e5c, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 646589629, guid: 3a6f031d60051504c9473540b2f42e5c, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 1232455471, guid: 3a6f031d60051504c9473540b2f42e5c, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: -1809039140, guid: 3a6f031d60051504c9473540b2f42e5c, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: -1092890520, guid: 3a6f031d60051504c9473540b2f42e5c, type: 3}
+    drivers:
+      keys: []
+      values: 
+  controlDriver:
+    name: 
+    autoIncrement: 1
+    percentageBased: 0
+    guid: 8326f0fc-1141-406a-b4d6-f1bb8a73bd0e
+  drivers:
+    keys: []
+    values: 
