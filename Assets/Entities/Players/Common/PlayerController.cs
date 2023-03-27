@@ -5,21 +5,21 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    Vector3 velocity;
-    CharacterController _characterController;
-    [SerializeField] private float walkSpeed;
+    Vector3 _velocity;
+    Rigidbody2D _rigidbody2D;
+    [SerializeField] private float _walkSpeed;
 
     public EmeraldState State { get; private set; } = EmeraldState.Movement;
-    public Vector2 Velocity => _characterController.velocity;
+    public Vector2 Velocity => _rigidbody2D.velocity;
     public Vector2 CurrentInput { get; private set; }
     public FacingDirections FacingDirection { get; private set; } = FacingDirections.South;
 
     void Awake() {
-        _characterController = GetComponent<CharacterController>();
+        _rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         switch (State) {
             case EmeraldState.Movement:
@@ -36,17 +36,10 @@ public class PlayerController : MonoBehaviour
 
         //Apply velocity to character controller.
         var movement = CurrentInput;
-        float diagonalSpeedModifier = Mathf.Sqrt(0.5f); // To limit diagonal movement speed
-        float currentSpeed = walkSpeed;
+        movement *= _walkSpeed;
 
-        if (CurrentInput.x != 0f && CurrentInput.y != 0f)
-        {
-            currentSpeed *= diagonalSpeedModifier;
-        }
-        movement = movement.normalized * currentSpeed * Time.deltaTime;
-
-        // Move the player using the CharacterController
-        _characterController.Move(movement);
+        // Move the player using the rigidbody
+        _rigidbody2D.velocity = movement;
     }
 
     //Called from PlayerInput

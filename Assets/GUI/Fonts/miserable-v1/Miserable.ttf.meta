@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 2db4c991fa1314c4ebd12af03e46b6ea
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Miserable
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 377c4a02342deaf47809b74c6e31b36a, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
