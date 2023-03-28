@@ -37,10 +37,10 @@ public class EmeraldRenderer : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        var velocity = _playerController.Velocity;
-        bool isMoving = velocity != Vector2.zero;
+        //var velocity = _playerController.Velocity;
+        bool isMoving = _playerController.Velocity != Vector2.zero;
         var facingDirection = _playerController.FacingDirection;
 
         _reanimator.Set(Drivers.IsMoving, isMoving);
