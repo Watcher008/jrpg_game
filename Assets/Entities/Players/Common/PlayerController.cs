@@ -1,64 +1,48 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    //Vector3 _velocity;
     Rigidbody2D _rigidbody2D;
     [SerializeField] private float _walkSpeed;
-    private PlayerInput playerInput;
+    private PlayerInput _input;
 
     public EmeraldState State { get; private set; } = EmeraldState.Movement;
     public Vector2 Velocity => _rigidbody2D.velocity;
-    public Vector2 CurrentInput { get; private set; }
+    private Vector2 _movementInput;
     public FacingDirections FacingDirection { get; private set; } = FacingDirections.South;
 
     private void Awake() 
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
-        playerInput = GetComponent<PlayerInput>();
+        _input = GetComponent<PlayerInput>();
+
+        _input.actions["Move"].performed += OnMove;
     }
 
-    // Update is called once per frame
-    private void FixedUpdate()
+    private void Update()
     {
         if (State == EmeraldState.Movement) UpdateMovementState();
-
-        /*switch (State) {
-            case EmeraldState.Movement:
-                UpdateMovementState();
-                break;
-        }*/
     }
 
-    void UpdateMovementState() 
+    private void OnDestroy()
     {
-        CurrentInput = playerInput.actions["Move"].ReadValue<Vector2>();
-        FacingDirection = GetDirection(CurrentInput);
+        _input.actions["Move"].performed -= OnMove;
+    }
 
-        // If the input vector has a magnitude greater than 1, normalize it
-        //This value will also be between -1 and 1
-        /*if (CurrentInput.magnitude > 1f) {
-            CurrentInput.Normalize();
-        }*/
+    private void OnMove(InputAction.CallbackContext obj)
+    {
+        _movementInput = obj.ReadValue<Vector2>();
+    }
 
-        //Apply velocity to character controller.
-        //var movement = CurrentInput;
-        //movement *= _walkSpeed;
+    private void UpdateMovementState() 
+    {
+        _movementInput = _input.actions["Move"].ReadValue<Vector2>();
+        FacingDirection = GetDirection(_movementInput);;
 
         // Move the player using the rigidbody
-        _rigidbody2D.velocity = CurrentInput * _walkSpeed;
+        _rigidbody2D.velocity = _movementInput * _walkSpeed;
     }
-
-    //Called from PlayerInput
-    /*void OnMove(InputValue value) 
-    {
-        //Convert input values to usable velocity;
-        CurrentInput = value.Get<Vector2>().normalized;
-        FacingDirection = GetDirection(CurrentInput);
-    }*/
 
     private FacingDirections GetDirection(Vector2 input) 
     {

@@ -8,7 +8,7 @@ public class ItemPickup : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!collision.CompareTag("Player")) return;
-        collision.GetComponent<Inventory>().AddItem(item);
+        collision.GetComponent<Inventory>()?.AddItem(item);
         Destroy(gameObject);
     }
 }
