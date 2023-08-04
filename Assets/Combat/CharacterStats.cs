@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -57,5 +58,4 @@ public class CharacterStats : MonoBehaviour
     {
         currentHealth = Mathf.Clamp(currentHealth + value, 0, attributes.Health.Value);
     }
-
 }

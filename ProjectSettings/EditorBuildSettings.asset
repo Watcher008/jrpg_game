@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Game Scenes/Background Elements/Bootstraps.unity
+    guid: dcf7354db0f171f40ba4b76e1508c5b1
+  - enabled: 1
+    path: Assets/Scenes/Game Scenes/Background Elements/EventLogger.unity
+    guid: 8a11b7f8d40a05b45a317afc662d35f1
+  - enabled: 1
+    path: Assets/Scenes/Game Scenes/Gameplay/Prototype.unity
+    guid: f51f60a9c8894b641b40cce80617e6f8
+  - enabled: 1
+    path: Assets/Scenes/Game Scenes/Gameplay/BattleScene.unity
+    guid: eaa8f9ca56d4684479d7b6ee12953800
   m_configObjects: {}
